@@ -61,5 +61,30 @@ mysql -h mydb.c1abcxyz.us-east-1.rds.amazonaws.com -u projectuser -p
 
 ```
 
+### create the user inseide the ubuntu machine and set the password 
+
+### Create User
+
+```
+sudo useradd -m -s /bin/bash devuser
+
+```
+```
+sudo mkdir -p /home/devuser/.ssh
+```
+```
+sudo cp /home/ubuntu/.ssh/authorized_keys /home/devuser/.ssh/
+```
+```
+sudo chown -R devuser:devuser /home/devuser/.ssh
+sudo chmod 700 /home/devuser/.ssh
+sudo chmod 600 /home/devuser/.ssh/authorized_keys
+```
+```
+ssh -i mykey.pem devuser@<EC2-PUBLIC-IP>
+```
+
+
+
 
 
