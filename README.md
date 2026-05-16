@@ -14,3 +14,52 @@ mysql connection +
 
 ```
 
+```
+need to the user and password inside the mysql and that only need to access the only one database create that database also Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> 
+mysql> 
+mysql>
+
+```
+```
+CREATE DATABASE projectdb;
+```
+```
+CREATE USER 'projectuser'@'%' IDENTIFIED BY 'Project@123';
+
+```
+```
+projectuser
+Project@123
+```
+
+```
+GRANT ALL PRIVILEGES ON projectdb.* TO 'projectuser'@'%';
+```
+```
+FLUSH PRIVILEGES;
+```
+```
+SHOW DATABASES;
+```
+```
+SELECT user,host FROM mysql.user;
+
+```
+```
+exit
+
+```
+
+```
+mysql -h mydb.c1abcxyz.us-east-1.rds.amazonaws.com -u projectuser -p
+
+```
+
+
+
