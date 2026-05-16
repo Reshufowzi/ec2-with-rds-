@@ -1,6 +1,6 @@
 # ec2-with-rds-
 ```
-created the VPC with public subnet and private subnet(2)
+created the VPC with public subnet and private subnet(2) nat gateway everything 
 created the ec2 using the ubuntu machine
 created the RDS using the DB subnet group giving the public access no
 note : it asking the 2 subnets of AZ
